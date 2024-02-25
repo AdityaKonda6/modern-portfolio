@@ -1,7 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.example{
 .translate-z-0 {
   transform: translateZ(0px);
 }
@@ -48,4 +48,5 @@
   .textarea {
     @apply w-full h-[180px] p-6 rounded-lg resize-none;
   }
+}
 }

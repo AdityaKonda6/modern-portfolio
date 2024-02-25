@@ -1,4 +1,4 @@
-import { Sora } from "next/font/google";
+
 import Head from "next/head";
 
 import Header from "../components/Header";
@@ -6,12 +6,20 @@ import Nav from "../components/Nav";
 import TopLeftImg from "../components/TopLeftImg";
 
 // setup font
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
+const fontStyles = `
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 100 800;
+    src: url('/path-to-your-fonts/Sora-Regular.woff2') format('woff2');
+    /* Add other font formats and sources if needed */
+  }
 
+  :root {
+    --font-sora: 'Sora', sans-serif;
+  }
+`;
+Head({ children: <style>{fontStyles}</style> });
 const Layout = ({ children }) => {
   return (
     <main

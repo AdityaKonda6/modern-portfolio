@@ -1,9 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 
+
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
-import 'D:\#Modern Portfolio\clone\modern-portfolio\styles\styles.css'
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
