@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import 'D:\#Modern Portfolio\clone\modern-portfolio\styles\styles.css'
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
